@@ -13,6 +13,6 @@ var requestListener = function (req, res) {
 
 
 var server = http.createServer(requestListener);
-server.listen(8080,function(){
+server.listen(PORT,function(){
 	console.log("Server listening");	
 });
