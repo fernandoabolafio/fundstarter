@@ -6,7 +6,10 @@ const PORT = process.env.PORT || 8080
 
 var requestListener = function (req, res) {
   res.writeHead(200);
-  res.end("Hello Word!");
+  var filename = "index.html";
+  var buf = fs.readFileSync(filename, "utf8");
+
+  res.end(buf);
   
 
 }
